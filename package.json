@@ -4,7 +4,7 @@
   "description": "Boilerplate for react  and webpack",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack serve --open",
+    "start": "node server.js",
     "build": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write '**/*.js' --ignore-path .gitignore",
     "lint": "eslint -c .eslintrc  --fix $(git diff --name-only remotes/origin/master... --diff-filter=d | grep -E \"(.js$|.ts$|.tsx$|.jsx)\")",
@@ -60,6 +60,7 @@
     "babel-plugin-transform-react-pure-class-to-function": "1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "core-js": "3.15.2",
+    "express": "^4.17.1",
     "lodash": "4.17.21",
     "prop-types": "15.7.2",
     "react": "16.14.0",
